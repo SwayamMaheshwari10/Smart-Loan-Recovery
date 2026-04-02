@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+models/*.pkl
+models/*.joblib
+.venv/
+venv/
+.env
+reports/*.csv
