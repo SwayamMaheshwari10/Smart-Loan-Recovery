@@ -15,7 +15,7 @@ A simple machine learning project to help prioritize loan recovery cases.
 ```
 Smart Loan Recovery/
 ├── train.py                       # Model training script
-├── REQUIREMENTS.txt               # Python dependencies
+├── requirements.txt               # Python dependencies
 ├── data/
 │   └── loan-recovery.csv          # Input dataset
 ├── models/                        # Saved model artifacts
@@ -25,18 +25,16 @@ Smart Loan Recovery/
 ├── src/
 │   ├── data_preprocessing.py      # Feature engineering + segmentation
 │   ├── model.py                   # Train/load/predict model
-│   ├── recovery_strategy.py       # Risk labels + actions + reporting
-│   ├── evaluation.py              # Visualisation and evaluation utilities
+│   ├── recovery_rules.py          # Risk labels + actions + reporting              
 │   └── util.py                    # Common path helpers
-└── streamlit_app/
-    └── app.py                     # Streamlit dashboard
+└── app.py                         # Streamlit dashboard
 ```
 
 ## 🛠️ Quick Start
 
 1. **Install dependencies**:
    ```bash
-   pip install -r REQUIREMENTS.txt
+   pip install -r requirements.txt
    ```
 
 2. **Train the model**:
@@ -46,7 +44,7 @@ Smart Loan Recovery/
 
 3. **Launch the dashboard**:
    ```bash
-   streamlit run streamlit_app/app.py
+   streamlit run app.py
    ```
 
 ## 📊 Usage
@@ -102,7 +100,7 @@ The Streamlit app provides:
 
 1. **Prepare data**: Ensure CSV has required columns
 2. **Train model**: Run `python train.py`
-3. **Launch dashboard**: Run `streamlit run streamlit_app/app.py`
+3. **Launch dashboard**: Run `streamlit run app.py`
 4. **Upload data**: Use sidebar to upload your CSV
 5. **Analyze results**: View metrics, charts, and priority cases
 6. **Export results**: Download analysis results

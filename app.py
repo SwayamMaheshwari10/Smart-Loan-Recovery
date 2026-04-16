@@ -14,7 +14,7 @@ st.set_page_config(
     layout="wide"
 )
 
-@st.cache_data
+@st.cache_resource
 def load_model_and_artifacts():
     """Load the trained model and preprocessing artifacts."""
     try:
